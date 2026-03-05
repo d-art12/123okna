@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0B5FFF" />
+    <title>Окна в Сочи — расчет стоимости за 1 минуту</title>
+    <meta
+      name="description"
+      content="Пластиковые и алюминиевые окна от производителя. Бесплатный замер и гарантия 5 лет. Рассчитайте стоимость за 1 минуту."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">
+            <span class="brand__title">Сочинский оконный завод</span>
+            <span class="brand__subtitle">Производство и установка</span>
+          </span>
+        </a>
+
+        <div class="header__actions">
+          <a class="link link--muted header__phone" href="tel:+79990000000">+7 (999) 000-00-00</a>
+          <button class="btn btn--primary" type="button" data-open-quiz>Рассчитать стоимость</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="badge">Окна в Сочи от производителя</p>
+            <h1 id="hero-title" class="h1">Рассчитайте стоимость окон в Сочи за 1 минуту</h1>
+            <p class="lead">
+              Пластиковые и алюминиевые окна от производителя.<br />
+              Бесплатный замер и гарантия 5 лет.
+            </p>
+
+            <div class="hero__cta">
+              <button class="btn btn--primary btn--lg" type="button" data-open-quiz>Рассчитать стоимость</button>
+              <p class="muted hero__note">Ответьте на 5 вопросов — и получите расчет стоимости</p>
+            </div>
+
+            <ul class="bullets" aria-label="Преимущества">
+              <li class="bullets__item"><span class="bullets__dot" aria-hidden="true"></span>17 лет на рынке</li>
+              <li class="bullets__item"><span class="bullets__dot" aria-hidden="true"></span>Собственное производство</li>
+              <li class="bullets__item"><span class="bullets__dot" aria-hidden="true"></span>Монтаж по ГОСТ</li>
+              <li class="bullets__item"><span class="bullets__dot" aria-hidden="true"></span>Бесплатный замер</li>
+            </ul>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="visual-card">
+              <div class="visual-card__top">
+                <div class="visual-card__pill">Калькулятор</div>
+                <div class="visual-card__pill visual-card__pill--ghost">Без спама</div>
+              </div>
+              <div class="visual-card__lines">
+                <div class="visual-card__line"></div>
+                <div class="visual-card__line"></div>
+                <div class="visual-card__line visual-card__line--short"></div>
+              </div>
+              <div class="visual-card__window">
+                <div class="window">
+                  <div class="window__frame">
+                    <div class="window__pane"></div>
+                    <div class="window__pane"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="visual-card__bottom">
+                <div class="visual-card__chip">Замер: 0 ₽</div>
+                <div class="visual-card__chip">Гарантия: 5 лет</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="advantages-title">
+        <div class="container">
+          <div class="section__head">
+            <h2 id="advantages-title" class="h2">Почему выбирают нас</h2>
+            <p class="muted">Коротко о том, что важно для качества и сроков.</p>
+          </div>
+
+          <div class="grid grid--4">
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M5 7h14v10H5V7Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9 7V5h6v2"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="h3">Собственное производство</h3>
+              <p class="muted">Контроль качества на каждом этапе и стабильные сроки изготовления.</p>
+            </article>
+
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 3v18"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M6 8h12M6 12h12M6 16h12"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="h3">17 лет на рынке</h3>
+              <p class="muted">Опыт в сложных объектах и климате черноморского побережья.</p>
+            </article>
+
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4 12l5 5 11-11"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="h3">Монтаж по ГОСТ</h3>
+              <p class="muted">Теплые швы, правильные узлы примыкания и аккуратная установка.</p>
+            </article>
+
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 21s7-4.35 7-10.2A4.8 4.8 0 0 0 14.2 6c-1.1 0-1.9.5-2.2.8-.3-.3-1.1-.8-2.2-.8A4.8 4.8 0 0 0 5 10.8C5 16.65 12 21 12 21Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="h3">Гарантия 5 лет</h3>
+              <p class="muted">Фиксируем условия в договоре и остаемся на связи после монтажа.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" aria-labelledby="works-title">
+        <div class="container">
+          <div class="section__head">
+            <h2 id="works-title" class="h2">Наши работы</h2>
+            <p class="muted">Примеры установок в квартирах, домах и на балконах.</p>
+          </div>
+
+          <div class="grid grid--works">
+            <figure class="work">
+              <img
+                loading="lazy"
+                alt="Остекление балкона"
+                src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23eef2ff'/><stop offset='1' stop-color='%23dbeafe'/></linearGradient></defs><rect width='1200' height='900' fill='url(%23g)'/><rect x='140' y='140' width='920' height='620' rx='28' fill='%230b1220' opacity='0.05'/><rect x='200' y='210' width='800' height='480' rx='18' fill='white'/><path d='M200 450h800' stroke='%23cbd5e1' stroke-width='12'/><path d='M600 210v480' stroke='%23cbd5e1' stroke-width='12'/><text x='60' y='840' fill='%230b5fff' font-family='Arial' font-size='54'>Пример работы</text></svg>"
+              />
+            </figure>
+            <figure class="work">
+              <img
+                loading="lazy"
+                alt="Окна в квартире"
+                src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'><rect width='1200' height='900' fill='%23f8fafc'/><rect x='120' y='120' width='960' height='660' rx='28' fill='%230b1220' opacity='0.05'/><rect x='220' y='220' width='760' height='460' rx='18' fill='white'/><path d='M220 450h760' stroke='%23cbd5e1' stroke-width='12'/><path d='M600 220v460' stroke='%23cbd5e1' stroke-width='12'/><circle cx='1010' cy='180' r='22' fill='%230b5fff' opacity='0.85'/><text x='60' y='840' fill='%230b5fff' font-family='Arial' font-size='54'>Пример работы</text></svg>"
+              />
+            </figure>
+            <figure class="work">
+              <img
+                loading="lazy"
+                alt="Панорамное остекление"
+                src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'><defs><linearGradient id='g2' x1='0' y1='1' x2='1' y2='0'><stop offset='0' stop-color='%23f8fafc'/><stop offset='1' stop-color='%23eff6ff'/></linearGradient></defs><rect width='1200' height='900' fill='url(%23g2)'/><rect x='140' y='150' width='920' height='600' rx='28' fill='white'/><path d='M140 320h920' stroke='%23cbd5e1' stroke-width='12'/><path d='M140 490h920' stroke='%23cbd5e1' stroke-width='12'/><path d='M446 150v600M754 150v600' stroke='%23cbd5e1' stroke-width='12'/><text x='60' y='840' fill='%230b5fff' font-family='Arial' font-size='54'>Пример работы</text></svg>"
+              />
+            </figure>
+            <figure class="work">
+              <img
+                loading="lazy"
+                alt="Окна в доме"
+                src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'><rect width='1200' height='900' fill='%23eff6ff'/><rect x='160' y='160' width='880' height='580' rx='28' fill='white'/><rect x='240' y='240' width='720' height='420' rx='18' fill='%23f8fafc'/><path d='M240 450h720' stroke='%23cbd5e1' stroke-width='12'/><path d='M600 240v420' stroke='%23cbd5e1' stroke-width='12'/><path d='M300 260h110' stroke='%230b5fff' stroke-width='14' stroke-linecap='round'/><text x='60' y='840' fill='%230b5fff' font-family='Arial' font-size='54'>Пример работы</text></svg>"
+              />
+            </figure>
+            <figure class="work">
+              <img
+                loading="lazy"
+                alt="Остекление офиса"
+                src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'><rect width='1200' height='900' fill='%23f8fafc'/><rect x='120' y='140' width='960' height='620' rx='28' fill='white'/><path d='M120 280h960M120 420h960M120 560h960' stroke='%23cbd5e1' stroke-width='12'/><path d='M360 140v620M680 140v620' stroke='%23cbd5e1' stroke-width='12'/><text x='60' y='840' fill='%230b5fff' font-family='Arial' font-size='54'>Пример работы</text></svg>"
+              />
+            </figure>
+            <figure class="work">
+              <img
+                loading="lazy"
+                alt="Остекление лоджии"
+                src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'><defs><linearGradient id='g3' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23ffffff'/><stop offset='1' stop-color='%23eff6ff'/></linearGradient></defs><rect width='1200' height='900' fill='url(%23g3)'/><rect x='160' y='180' width='880' height='540' rx='28' fill='white'/><path d='M160 450h880' stroke='%23cbd5e1' stroke-width='12'/><path d='M520 180v540M760 180v540' stroke='%23cbd5e1' stroke-width='12'/><circle cx='240' cy='250' r='14' fill='%230b5fff' opacity='0.85'/><text x='60' y='840' fill='%230b5fff' font-family='Arial' font-size='54'>Пример работы</text></svg>"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="reviews-title">
+        <div class="container">
+          <div class="section__head">
+            <h2 id="reviews-title" class="h2">Отзывы</h2>
+            <p class="muted">Клиенты ценят аккуратный монтаж и соблюдение сроков.</p>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="review">
+              <div class="review__top">
+                <div class="review__avatar" aria-hidden="true">А</div>
+                <div>
+                  <div class="review__name">Алексей</div>
+                  <div class="review__meta muted">Сочи • квартира</div>
+                </div>
+                <div class="review__stars" aria-label="Оценка 5 из 5">
+                  <span aria-hidden="true">★★★★★</span>
+                </div>
+              </div>
+              <p class="review__text">
+                Быстро сделали расчет, замер на следующий день. Монтаж аккуратный, без пыли по всей квартире. Результатом
+                доволен.
+              </p>
+            </article>
+
+            <article class="review">
+              <div class="review__top">
+                <div class="review__avatar" aria-hidden="true">Е</div>
+                <div>
+                  <div class="review__name">Екатерина</div>
+                  <div class="review__meta muted">Адлер • балкон</div>
+                </div>
+                <div class="review__stars" aria-label="Оценка 5 из 5">
+                  <span aria-hidden="true">★★★★★</span>
+                </div>
+              </div>
+              <p class="review__text">
+                Понравилось, что все по договору и понятные сроки. Сделали теплое остекление лоджии — стало заметно тише
+                и теплее.
+              </p>
+            </article>
+
+            <article class="review">
+              <div class="review__top">
+                <div class="review__avatar" aria-hidden="true">И</div>
+                <div>
+                  <div class="review__name">Игорь</div>
+                  <div class="review__meta muted">Хоста • дом</div>
+                </div>
+                <div class="review__stars" aria-label="Оценка 5 из 5">
+                  <span aria-hidden="true">★★★★★</span>
+                </div>
+              </div>
+              <p class="review__text">
+                Консультация помогла определиться с алюминием. Монтажники приехали вовремя, сделали по ГОСТ, швы
+                аккуратные.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--compact" aria-labelledby="about-title">
+        <div class="container about">
+          <div class="about__card">
+            <h2 id="about-title" class="h2">О компании</h2>
+            <p class="muted">
+              Сочинский оконный завод. Производство и установка пластиковых и алюминиевых окон.
+            </p>
+            <div class="about__cta">
+              <button class="btn btn--primary" type="button" data-open-quiz>Рассчитать стоимость</button>
+              <a class="btn btn--ghost" href="tel:+79990000000">Позвонить</a>
+            </div>
+          </div>
+
+          <div class="about__facts">
+            <div class="fact">
+              <div class="fact__value">17</div>
+              <div class="fact__label muted">лет опыта</div>
+            </div>
+            <div class="fact">
+              <div class="fact__value">5</div>
+              <div class="fact__label muted">лет гарантия</div>
+            </div>
+            <div class="fact">
+              <div class="fact__value">ГОСТ</div>
+              <div class="fact__label muted">монтаж</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-labelledby="footer-title">
+      <div class="container footer__grid">
+        <div class="footer__col">
+          <div id="footer-title" class="footer__title">Контакты</div>
+          <div class="footer__links">
+            <a class="link" href="tel:+79990000000">Телефон: +7 (999) 000-00-00</a>
+            <a
+              class="link"
+              href="https://wa.me/79990000000"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Написать в WhatsApp"
+              >WhatsApp</a
+            >
+            <div class="muted">Адрес офиса: Сочи, ул. Примерная, 10</div>
+          </div>
+        </div>
+
+        <div class="footer__col footer__map">
+          <div class="footer__title">Карта</div>
+          <div class="map">
+            <iframe
+              title="Карта офиса"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=%D0%A1%D0%BE%D1%87%D0%B8%20%D1%83%D0%BB.%20%D0%9D%D0%B0%D0%B2%D0%B0%D0%B3%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F&output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <div class="muted">© <span id="year"></span> Сочинский оконный завод</div>
+        <button class="link link--muted" type="button" data-open-quiz>Квиз-расчет</button>
+      </div>
+    </footer>
+
+    <div class="modal" data-quiz-modal aria-hidden="true">
+      <div class="modal__backdrop" data-close-quiz tabindex="-1"></div>
+      <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Квиз для расчета окон">
+        <div class="quiz">
+          <div class="quiz__head">
+            <div class="quiz__meta">
+              <div class="quiz__title">Расчет стоимости</div>
+              <div class="quiz__step muted" data-quiz-step>Шаг 1 из 6</div>
+            </div>
+            <button class="icon-btn" type="button" data-close-quiz aria-label="Закрыть">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M6 6l12 12M18 6L6 18"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="progress" aria-label="Прогресс квиза">
+            <div class="progress__bar" data-progress-bar></div>
+          </div>
+
+          <div class="quiz__body" data-quiz-body></div>
+
+          <div class="quiz__foot">
+            <button class="btn btn--ghost" type="button" data-quiz-back>Назад</button>
+            <button class="btn btn--primary" type="button" data-quiz-next>Далее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
