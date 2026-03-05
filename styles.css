@@ -529,6 +529,22 @@ input {
   display: grid;
   gap: 8px;
   min-height: 168px;
+
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.16);
+}
+
+.review-btn {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.review-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.15);
 }
 
 .icon {
