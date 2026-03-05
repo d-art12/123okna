@@ -15,6 +15,11 @@ const QUESTIONS = [
     options: ["1–2", "3–5", "5+"],
   },
   {
+    id: "area",
+    title: "Сколько примерно квадратных метров остекления нужно?",
+    options: ["До 10 м²", "10–20 м²", "20–40 м²", "Более 40 м²", "Нужна консультация / не знаю"],
+  },
+  {
     id: "timing",
     title: "Когда планируете установку?",
     options: ["в ближайший месяц", "в течение 3 месяцев", "просто узнаю цену"],
@@ -379,6 +384,27 @@ function submitLead({ toast, nameInput, phoneInput }) {
 
   state.sending = true;
   render();
+
+  const message = `
+Новая заявка с квиз лендинга
+
+Имя: ${name}
+Телефон: ${phone}
+
+Ответы:
+${QUESTIONS.map(q => `${q.title}: ${state.answers[q.id]}`).join('\n')}
+`;
+
+fetch(`https://api.telegram.org/bot8735791182:AAHl2ZMSZfCPXTR1QCcVGVCHJkMz8ki0skM/sendMessage`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    chat_id: "589807721",
+    text: message
+  })
+});
 
   window.setTimeout(() => {
     state.sending = false;
