@@ -492,3 +492,54 @@ function bindEvents() {
 setYear();
 bindEvents();
 
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+
+  reveals.forEach((el, index) => {
+    const elementTop = el.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      setTimeout(() => {
+        el.classList.add("visible");
+      }, index * 160);
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+
+const counters = document.querySelectorAll(".counter");
+
+const animateCounter = (el) => {
+  const target = +el.dataset.count;
+  let current = 0;
+
+  const step = target / 150;
+
+  const update = () => {
+    current += step;
+
+    if (current < target) {
+      el.textContent = Math.floor(current).toLocaleString("ru-RU");
+      requestAnimationFrame(update);
+    } else {
+      el.textContent = target.toLocaleString("ru-RU") + " +";
+    }
+  };
+
+  update();
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+counters.forEach((counter) => observer.observe(counter));
