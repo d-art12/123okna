@@ -517,7 +517,7 @@ const animateCounter = (el) => {
   const target = +el.dataset.count;
   let current = 0;
 
-  const step = target / 150;
+  const step = target / 230;
 
   const update = () => {
     current += step;
@@ -543,3 +543,22 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 counters.forEach((counter) => observer.observe(counter));
+
+const processSteps = document.querySelectorAll(".process-step");
+
+const processObserver = new IntersectionObserver((entries)=>{
+entries.forEach((entry)=>{
+if(entry.isIntersecting){
+
+setTimeout(()=>{
+entry.target.classList.add("visible");
+}, entry.target.dataset.delay || 0);
+
+}
+});
+},{threshold:0.3});
+
+processSteps.forEach((step,i)=>{
+step.dataset.delay = i*200;
+processObserver.observe(step);
+});
